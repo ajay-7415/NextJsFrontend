@@ -1,28 +1,8 @@
-'use client';
-
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0B0C15] text-white selection:bg-[#B026FF] selection:text-white overflow-x-hidden">
-      <style jsx global>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-20px); }
-        }
-        @keyframes shine {
-          0% { background-position: 200% center; }
-          100% { background-position: -200% center; }
-        }
-        @keyframes spin-slow {
-          from { transform: translate(-50%, -50%) rotate(0deg); }
-          to { transform: translate(-50%, -50%) rotate(360deg); }
-        }
-        .animate-float { animation: float 6s ease-in-out infinite; }
-        .animate-shine { animation: shine 2s linear infinite; }
-        .animate-spin-slow { animation: spin-slow 12s linear infinite; }
-      `}</style>
-
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         {/* Animated Background Elements */}
