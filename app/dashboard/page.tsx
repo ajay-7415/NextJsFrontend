@@ -58,7 +58,7 @@ export default function DashboardPage() {
     };
 
     const copyToClipboard = (url: string, id: string) => {
-        const fullUrl = `${window.location.origin}/forms/${url}`;
+        const fullUrl = `${window.location.origin}/forms/public/${url}`;
         navigator.clipboard.writeText(fullUrl);
         setCopiedId(id);
         setTimeout(() => setCopiedId(null), 2000);

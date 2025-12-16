@@ -29,7 +29,7 @@ const FIELD_TYPES = [
 
 interface FormBuilderProps {
     fields: any[];
-    setFields: (fields: any[]) => void;
+    setFields: React.Dispatch<React.SetStateAction<any[]>>;
 }
 
 export default function FormBuilder({ fields, setFields }: FormBuilderProps) {
